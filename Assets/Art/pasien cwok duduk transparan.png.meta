@@ -1,9 +1,9 @@
 fileFormatVersion: 2
-guid: 4a9ca98eced398949816b7b0e61c6898
+guid: 263166c9792c53945bf4d07a7ad2995c
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
-  serializedVersion: 12
+  serializedVersion: 13
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -94,6 +94,19 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
     buildTarget: Android
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -108,7 +121,70 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: pasien cwok duduk transparan_0
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 44
+        width: 333
+        height: 885
+      alignment: 9
+      pivot: {x: 0.61592644, y: 0.49999994}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cdd785a70a5eb248ba938ab643b31fe
+      internalID: 666656830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pasien cwok duduk transparan_1
+      rect:
+        serializedVersion: 2
+        x: 807
+        y: 42
+        width: 333
+        height: 885
+      alignment: 9
+      pivot: {x: 0.6108862, y: 0.49999997}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a0cbace62b5a1a46a2ca7f991df047d
+      internalID: 2041432074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pasien cwok duduk transparan_2
+      rect:
+        serializedVersion: 2
+        x: 1478
+        y: 28
+        width: 333
+        height: 885
+      alignment: 9
+      pivot: {x: 0.59072465, y: 0.49999994}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6744e874839c4594ca58545bf91a31b2
+      internalID: 1622839205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -119,7 +195,10 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      pasien cwok duduk transparan_0: 666656830
+      pasien cwok duduk transparan_1: 2041432074
+      pasien cwok duduk transparan_2: 1622839205
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

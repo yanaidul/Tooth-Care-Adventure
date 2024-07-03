@@ -6,6 +6,7 @@ using DG.Tweening;
 public class MoveOnStart : MonoBehaviour
 {
     [SerializeField] private float _animationDuration = 2f;
+    [SerializeField] private Animator _animator;
 
     private RectTransform _rectTransform;
     private Doctor _doctor;
@@ -28,6 +29,7 @@ public class MoveOnStart : MonoBehaviour
 
         _rectTransform.DOAnchorPosX(_initialXPos, _animationDuration).SetEase(Ease.InOutSine).OnComplete(() =>
         {
+            _animator.SetBool("IsIdle", true);
             _doctor.OnDoctorSpeak();
         });
     }
