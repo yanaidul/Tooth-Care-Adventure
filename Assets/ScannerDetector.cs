@@ -12,8 +12,8 @@ public class ScannerDetector : MonoBehaviour
 
     private void Start()
     {
-        _onActionUltraSonicScalerSpriteRenderer.gameObject.SetActive(false);
-        _onActionUltraSonicScalerBoxCollider.enabled = true;
+        //_onActionUltraSonicScalerSpriteRenderer.gameObject.SetActive(false);
+        //_onActionUltraSonicScalerBoxCollider.enabled = true;
         _initPos = transform.localPosition;
     }
 
@@ -22,17 +22,18 @@ public class ScannerDetector : MonoBehaviour
     {
         if (collision.CompareTag("GigiBerlubang"))
         {
-            gameObject.transform.position = collision.transform.position;
-            _onActionUltraSonicScalerBoxCollider.enabled = false;
-            _onActionUltraSonicScalerSpriteRenderer.gameObject.SetActive(true);
-            transform.DOMoveX(transform.position.x - 0.5f, 0.3f).SetLoops(3, LoopType.Yoyo).OnComplete(() =>
-            {
-                KarangGigiGameManager.GetInstance().RemoveKarangGigiFromList(collision.gameObject);
-                collision.gameObject.SetActive(false);
-                transform.localPosition = _initPos;
-                _onActionUltraSonicScalerSpriteRenderer.gameObject.SetActive(false);
-                _onActionUltraSonicScalerBoxCollider.enabled = true;
-            });
+            Debug.Log("Detect Gigi Berlubang");
+            //gameObject.transform.position = collision.transform.position;
+            //_onActionUltraSonicScalerBoxCollider.enabled = false;
+            //_onActionUltraSonicScalerSpriteRenderer.gameObject.SetActive(true);
+            //transform.DOMoveX(transform.position.x - 0.5f, 0.3f).SetLoops(3, LoopType.Yoyo).OnComplete(() =>
+            //{
+            //    KarangGigiGameManager.GetInstance().RemoveKarangGigiFromList(collision.gameObject);
+            //    collision.gameObject.SetActive(false);
+            //    transform.localPosition = _initPos;
+            //    _onActionUltraSonicScalerSpriteRenderer.gameObject.SetActive(false);
+            //    _onActionUltraSonicScalerBoxCollider.enabled = true;
+            //});
 
         }
     }

@@ -515,8 +515,6 @@ GameObject:
   - component: {fileID: 193658313}
   - component: {fileID: 193658312}
   - component: {fileID: 193658315}
-  - component: {fileID: 193658317}
-  - component: {fileID: 193658316}
   - component: {fileID: 193658318}
   - component: {fileID: 193658319}
   m_Layer: 0
@@ -543,7 +541,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1.3172, y: 2.42}
+  m_AnchoredPosition: {x: 0.99, y: 3.87}
   m_SizeDelta: {x: 16.42, y: 9.86}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!61 &193658312
@@ -662,69 +660,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 193658310}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bb018da25bf44b34496cc0a79b8fd2c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _mainSpriteRenderer: {fileID: 193658314}
   _mainBoxCollider: {fileID: 193658312}
---- !u!114 &193658316
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 193658310}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7ec7723a3c3700a4baeaab549bfdb578, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _gameEventNoParam: {fileID: 11400000, guid: 2ca883ca734e3244fb2d1c18ba857c53, type: 2}
-  _responsesNoParam:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 193658315}
-        m_TargetAssemblyTypeName: UltrasonicScaler, Assembly-CSharp
-        m_MethodName: OnFinishCleaningKarangGigi
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &193658317
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 193658310}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7ec7723a3c3700a4baeaab549bfdb578, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _gameEventNoParam: {fileID: 11400000, guid: ee4bdd19b80eff340a9231f32987a94c, type: 2}
-  _responsesNoParam:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 193658315}
-        m_TargetAssemblyTypeName: UltrasonicScaler, Assembly-CSharp
-        m_MethodName: OnDetectKarangGigi
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &193658318
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1799,7 +1741,7 @@ GameObject:
   - component: {fileID: 888096542}
   m_Layer: 0
   m_Name: Gigi Berlubang
-  m_TagString: KarangGigi
+  m_TagString: GigiBerlubang
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1904,7 +1846,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 3
   m_Sprite: {fileID: -1169770418, guid: 1fe39acb0abe96d45860b985332c9e0e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -2061,7 +2003,7 @@ GameObject:
   - component: {fileID: 927545097}
   m_Layer: 0
   m_Name: Gigi Berlubang
-  m_TagString: KarangGigi
+  m_TagString: GigiBerlubang
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2166,7 +2108,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 3
   m_Sprite: {fileID: -1903332626, guid: 6fef81727b8a4244ca5651e4e47c9309, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -2917,7 +2859,6 @@ GameObject:
   - component: {fileID: 1588224153}
   - component: {fileID: 1588224156}
   - component: {fileID: 1588224158}
-  - component: {fileID: 1588224159}
   - component: {fileID: 1588224160}
   m_Layer: 0
   m_Name: Scanner Detector
@@ -3014,22 +2955,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &1588224159
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1588224152}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a0ca84c38faef943a3c1530d7012913, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _onDetectKarangGigi: {fileID: 11400000, guid: ee4bdd19b80eff340a9231f32987a94c, type: 2}
-  _onFinishCleaningKarangGigi: {fileID: 11400000, guid: 2ca883ca734e3244fb2d1c18ba857c53, type: 2}
-  _onActionUltraSonicScalerSpriteRenderer: {fileID: 2019224536}
-  _onActionUltraSonicScalerBoxCollider: {fileID: 1588224156}
 --- !u!114 &1588224160
 MonoBehaviour:
   m_ObjectHideFlags: 0
