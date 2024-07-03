@@ -12,6 +12,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Game Selection.unity
     guid: 60894720c52441847863915a753475ec
   - enabled: 1
-    path: Assets/Scenes/Karang Gigi.unity
+    path: Assets/Scenes/Cabut Gigi.unity
     guid: 47d5786f7d8c6b74894590c5c856e5e4
   m_configObjects: {}
