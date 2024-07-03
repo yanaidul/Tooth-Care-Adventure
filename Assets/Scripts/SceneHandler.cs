@@ -24,8 +24,14 @@ public class SceneHandler : MonoBehaviour
     }
 
     //Method code yang dipanggil untuk ke scene game
-    public void ToGameScene()
+    public void ToKarangGigiGameScene()
     {
         SceneManager.LoadScene(2);
+    }
+
+    //Method code yang dipanggil untuk ke scene game
+    public void ToCabutGigiGameScene()
+    {
+        SceneManager.LoadScene(3);
     }
 }

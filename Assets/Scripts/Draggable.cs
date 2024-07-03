@@ -4,15 +4,15 @@ using UnityEngine;
 
 public class Draggable : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField] private bool _isBaut = false;
+    [SerializeField] private Sprite _bautBerdiri;
 
-    // Update is called once per frame
-    void Update()
+    public void OnClickObject()
     {
-        
+        if(_isBaut)
+        {
+            if (!TryGetComponent(out SpriteRenderer spriteRenderer)) return;
+            spriteRenderer.sprite = _bautBerdiri;
+        }
     }
 }

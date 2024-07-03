@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class DragController : MonoBehaviour
+public class DragController : Singleton<DragController>
 {
     private bool _isDragActive = false;
     private Vector2 _screenPosition;
@@ -13,8 +13,9 @@ public class DragController : MonoBehaviour
     private float _rightBound;
     private float _bottomBound;
 
-    private void Awake()
+    protected override void Awake()
     {
+        base.Awake();
         _mainCamera = Camera.main;
     }
 
@@ -71,6 +72,8 @@ public class DragController : MonoBehaviour
     private void InitDrag()
     {
         _isDragActive = true;
+        if (!_lastDragged.TryGetComponent(out Draggable draggable)) return;
+        draggable.OnClickObject();
     }
 
     private void Drag()
@@ -81,6 +84,11 @@ public class DragController : MonoBehaviour
     }
 
     private void Drop()
+    {
+        _isDragActive = false;
+    }
+
+    public void SetDragActiveToFalse()
     {
         _isDragActive = false;
     }
