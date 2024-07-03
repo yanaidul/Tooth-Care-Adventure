@@ -20,6 +20,7 @@ public class ScannerDetector : MonoBehaviour
         if (collision.CompareTag("GigiBerlubang"))
         {
             Debug.Log("Detect Gigi Berlubang");
+            SFXManager.GetInstance().OnScanGigiSelesai();
             _justOnceDetect = false;
             if (!transform.parent.TryGetComponent(out Draggable draggable)) return;
             draggable.enabled = false;

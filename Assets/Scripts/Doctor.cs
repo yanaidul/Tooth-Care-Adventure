@@ -8,6 +8,13 @@ public class Doctor : MonoBehaviour
 
     public void OnDoctorSpeak()
     {
+        SFXManager.GetInstance().OnDoctorSpeak();
+        StartCoroutine(OnTriggerDelay(SFXManager.GetInstance()._sfxDokterSpeakIntro.length));
+    }
+
+    IEnumerator OnTriggerDelay(float audioClipDuration)
+    {
+        yield return new WaitForSeconds(audioClipDuration);
         _onDoctorDoneSpeak.Raise();
     }
 }

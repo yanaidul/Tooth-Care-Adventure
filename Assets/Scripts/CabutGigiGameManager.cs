@@ -15,6 +15,7 @@ public class CabutGigiGameManager : Singleton<CabutGigiGameManager>
     private void Start()
     {
         _currentTahap = 0;
+        SFXManager.GetInstance().OnCabutGigiIntro();
         OnActiveStepPanel(_currentTahap);
     }
 
@@ -29,11 +30,9 @@ public class CabutGigiGameManager : Singleton<CabutGigiGameManager>
         Debug.Log("Next Tahap dengan current tahap= " + currentTahap);
         if(currentTahap >= 5)
         {
-            _onWin.Raise();
             Debug.Log("You won");
-            _worldGameObject.SetActive(false);
-            _gamePanel.SetActive(false);
-            _winPanel.SetActive(true);
+            SFXManager.GetInstance().OnCabutGigiOutro();
+            StartCoroutine(OnTriggerDelayOutro(SFXManager.GetInstance()._sfxCabutGigiOutro.length));
         }
         else
         {
@@ -50,5 +49,14 @@ public class CabutGigiGameManager : Singleton<CabutGigiGameManager>
             }
         }
 
+    }
+
+    IEnumerator OnTriggerDelayOutro(float audioClipDuration)
+    {
+        yield return new WaitForSeconds(audioClipDuration);
+        _onWin.Raise();
+        _worldGameObject.SetActive(false);
+        _gamePanel.SetActive(false);
+        _winPanel.SetActive(true);
     }
 }

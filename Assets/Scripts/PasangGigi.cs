@@ -13,7 +13,10 @@ public class PasangGigi : Singleton<PasangGigi>
     {
         _initPos = _nampan.transform.position;
         _nampan.transform.position = new Vector2(_nampan.transform.position.x, _nampan.transform.position.y - 10);
-        _nampan.transform.DOMoveY(_initPos.y, 1);
+        _nampan.transform.DOMoveY(_initPos.y, 1).OnComplete(() =>
+        {
+            SFXManager.GetInstance().OnPasangGigi();
+        }); ;
         _jumlahGigiTerpasang = 0;
     }
 

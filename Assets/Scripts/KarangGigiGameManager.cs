@@ -13,7 +13,8 @@ public class KarangGigiGameManager : Singleton<KarangGigiGameManager>
     private void Start()
     {
         _worldGameObject.SetActive(true);
-        _gamePanel.SetActive(true);
+        SFXManager.GetInstance().OnKarangGigiIntro();
+        StartCoroutine(OnTriggerDelayIntro(SFXManager.GetInstance()._sfxKarangGigiIntro.length));
         _winPanel.SetActive(false);
     }
 
@@ -24,11 +25,24 @@ public class KarangGigiGameManager : Singleton<KarangGigiGameManager>
 
         if(_karangGigiList.Count == 0)
         {
-            _onWin.Raise();
             Debug.Log("You won");
-            _worldGameObject.SetActive(false);
-            _gamePanel.SetActive(false);
-            _winPanel.SetActive(true);
+            SFXManager.GetInstance().OnKarangGigiOutro();
+            StartCoroutine(OnTriggerDelayOutro(SFXManager.GetInstance()._sfxOutroKarangGigiLaluWinScreen.length));
         }
+    }
+
+    IEnumerator OnTriggerDelayIntro(float audioClipDuration)
+    {
+        yield return new WaitForSeconds(audioClipDuration);
+        _gamePanel.SetActive(true);
+    }
+
+    IEnumerator OnTriggerDelayOutro(float audioClipDuration)
+    {
+        yield return new WaitForSeconds(audioClipDuration);
+        _onWin.Raise();
+        _worldGameObject.SetActive(false);
+        _gamePanel.SetActive(false);
+        _winPanel.SetActive(true);
     }
 }

@@ -15,7 +15,10 @@ public class Nampan : MonoBehaviour
     {
         _initPos = transform.position;
         transform.position = new Vector2(transform.position.x, transform.position.y - 10);
-        transform.DOMoveY(_initPos.y, 1);
+        transform.DOMoveY(_initPos.y, 1).OnComplete(() =>
+        {
+            SFXManager.GetInstance().OnTahapTang();
+        });
         _gigiBerlubang1InNampan.SetActive(false);
         _gigiBerlubang2InNampan.SetActive(false);
         _isiNampan = 0;

@@ -13,7 +13,10 @@ public class PasangBaut : Singleton<PasangBaut>
     {
         _initPos = _nampan.transform.position;
         _nampan.transform.position = new Vector2(_nampan.transform.position.x, _nampan.transform.position.y - 10);
-        _nampan.transform.DOMoveY(_initPos.y, 1);
+        _nampan.transform.DOMoveY(_initPos.y, 1).OnComplete(() =>
+        {
+            SFXManager.GetInstance().OnPasangBaut();
+        });
         _jumlahBautTerpasang = 0;
     }
 
