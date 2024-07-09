@@ -12,6 +12,8 @@ public class MoveOnStart : MonoBehaviour
     private Doctor _doctor;
     private float _initialXPos;
 
+    private Tween _moveTween;
+
     private void Awake()
     {
         if (!TryGetComponent(out RectTransform rectTransform)) return;
@@ -27,10 +29,18 @@ public class MoveOnStart : MonoBehaviour
         _initialXPos = _rectTransform.anchoredPosition.x;
         _rectTransform.anchoredPosition = new Vector2(_initialXPos + 500, _rectTransform.anchoredPosition.y);
 
-        _rectTransform.DOAnchorPosX(_initialXPos, _animationDuration).SetEase(Ease.InOutSine).OnComplete(() =>
+        _moveTween = _rectTransform.DOAnchorPosX(_initialXPos, _animationDuration).SetEase(Ease.InOutSine).OnComplete(() =>
         {
-            _animator.SetBool("IsIdle", true);
-            _doctor.OnDoctorSpeak();
+            _animator.SetBool("IsTalk", true);
+            _doctor.OnDoctorSpeak(_animator);
         });
+    }
+
+    public void OnClickSkipButton()
+    {
+        _moveTween.Kill();
+        _animator.SetBool("IsTalk", true);
+        _animator.SetBool("IsIdle", true);
+        _rectTransform.anchoredPosition = new Vector2(_initialXPos, _rectTransform.anchoredPosition.y);
     }
 }

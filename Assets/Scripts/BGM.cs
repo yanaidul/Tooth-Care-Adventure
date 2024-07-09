@@ -4,15 +4,10 @@ using UnityEngine;
 
 public class BGM : Singleton<BGM>
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public AudioSource bgm;
 
-    // Update is called once per frame
-    void Update()
+    private void Start()
     {
-        
+        bgm.Stop();
     }
 }

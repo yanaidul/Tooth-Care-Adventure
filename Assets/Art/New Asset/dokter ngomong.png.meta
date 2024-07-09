@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: e933e0655d0163f43b1111e15cf879e1
+guid: 6a8b6c64ecce8184c92d7d33538fcfba
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,13 +110,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: home_0
+      name: dokter ngomong_0
       rect:
         serializedVersion: 2
-        x: 94
-        y: 94
-        width: 312
-        height: 312
+        x: 87
+        y: 81
+        width: 368
+        height: 804
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,8 +124,71 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f79c44808ade9e24bad46fd436fde9a1
-      internalID: -2106450873
+      spriteID: b08705628ff94d142ac521c140c24e4d
+      internalID: 605085457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dokter ngomong_2
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 71
+        width: 366
+        height: 804
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 570340eca4dd8a642933b4ea4cb1115d
+      internalID: -631622579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dokter ngomong_4
+      rect:
+        serializedVersion: 2
+        x: 1340
+        y: 67
+        width: 366
+        height: 803
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e41dd42924cadc478db60fd7288f434
+      internalID: -1125674975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dokter ngomong_6
+      rect:
+        serializedVersion: 2
+        x: 2010
+        y: 64
+        width: 366
+        height: 804
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb8e27edaf16a1944ad93f7c0f2ac8d6
+      internalID: -506805167
       vertices: []
       indices: 
       edges: []
@@ -141,7 +204,13 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      home_0: -2106450873
+      dokter ngomong_0: 605085457
+      dokter ngomong_1: -1342453125
+      dokter ngomong_2: -631622579
+      dokter ngomong_3: -1082260390
+      dokter ngomong_4: -1125674975
+      dokter ngomong_5: 436011027
+      dokter ngomong_6: -506805167
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

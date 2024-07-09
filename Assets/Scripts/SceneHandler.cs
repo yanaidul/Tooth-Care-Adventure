@@ -14,24 +14,28 @@ public class SceneHandler : MonoBehaviour
     //Method code yang dipanggil untuk kembali ke main menu
     public void OnMainMenu()
     {
+        BGM.GetInstance().bgm.Stop();
         SceneManager.LoadScene(0);
     }
 
     //Method code yang dipanggil untuk ke scene game sekection
     public void ToGameSelectionScene()
     {
+        if(!BGM.GetInstance().bgm.isPlaying) BGM.GetInstance().bgm.Play();
         SceneManager.LoadScene(1);
     }
 
     //Method code yang dipanggil untuk ke scene game
     public void ToKarangGigiGameScene()
     {
+        if (!BGM.GetInstance().bgm.isPlaying) BGM.GetInstance().bgm.Play();
         SceneManager.LoadScene(2);
     }
 
     //Method code yang dipanggil untuk ke scene game
     public void ToCabutGigiGameScene()
     {
+        if (!BGM.GetInstance().bgm.isPlaying) BGM.GetInstance().bgm.Play();
         SceneManager.LoadScene(3);
     }
 }

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: e933e0655d0163f43b1111e15cf879e1
+guid: b8ea395cc47fca44cb600be37a83982c
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,13 +110,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: home_0
+      name: logo karang gigi untuk bagian atas kepala_0
       rect:
         serializedVersion: 2
-        x: 94
-        y: 94
-        width: 312
-        height: 312
+        x: 120
+        y: 120
+        width: 260
+        height: 260
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,8 +124,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f79c44808ade9e24bad46fd436fde9a1
-      internalID: -2106450873
+      spriteID: a61461473cf9af64e885d6917dd48609
+      internalID: -1043239792
       vertices: []
       indices: 
       edges: []
@@ -141,7 +141,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      home_0: -2106450873
+      logo karang gigi untuk bagian atas kepala_0: -1043239792
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

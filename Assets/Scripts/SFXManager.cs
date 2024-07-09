@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SFXManager : Singleton<SFXManager>
 {
-    [SerializeField] private AudioSource _audioSource;
+    public AudioSource _audioSource;
 
     [Header("Game Selection")]
     public AudioClip _sfxDokterSpeakIntro;

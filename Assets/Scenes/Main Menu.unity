@@ -321,7 +321,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &612889904
 RectTransform:
   m_ObjectHideFlags: 0
@@ -552,9 +552,9 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 047487bfae7c78d4a94901277f6c2453, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.2
+  m_Volume: 0.08
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -649,6 +649,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _isDontDestroyOnLoad: 1
+  bgm: {fileID: 897974468}
 --- !u!4 &897974470
 Transform:
   m_ObjectHideFlags: 0
@@ -676,6 +677,7 @@ GameObject:
   - component: {fileID: 1392276600}
   - component: {fileID: 1392276599}
   - component: {fileID: 1392276598}
+  - component: {fileID: 1392276601}
   m_Layer: 5
   m_Name: Play Button
   m_TagString: Untagged
@@ -796,6 +798,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1392276596}
   m_CullTransparentMesh: 1
+--- !u!114 &1392276601
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1392276596}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c26dad9d251036a49b1fa8274aee99fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  imageToScale: {fileID: 1392276599}
 --- !u!1 &1724175731
 GameObject:
   m_ObjectHideFlags: 0
@@ -921,7 +936,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: dc51b94d6e5c9d94b8e7679c796bb749, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2f3fffdcf865f384cb31ad591fe8a8b4, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
