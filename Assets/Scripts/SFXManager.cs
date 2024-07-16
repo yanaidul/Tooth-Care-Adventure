@@ -39,12 +39,14 @@ public class SFXManager : Singleton<SFXManager>
         _audioSource.PlayOneShot(_sfxKarangGigiIntro);
     }
 
+    //Voice over akan aktif ketika ultrasonic scale di drag
     public void OnClickUltrasonicScaler()
     {
         if (_audioSource.isPlaying) _audioSource.Stop();
         _audioSource.PlayOneShot(_sfxUltrasonicScaler);
     }
 
+    //Voice over akan aktif ketika game karang gigi sudah selesai
     public void OnKarangGigiOutro()
     {
         if (_audioSource.isPlaying) _audioSource.Stop();
@@ -57,26 +59,36 @@ public class SFXManager : Singleton<SFXManager>
         if (_audioSource.isPlaying) _audioSource.Stop();
         _audioSource.PlayOneShot(_sfxCabutGigiIntro);
     }
+
+    //Voice over akan aktif ketika scan gigi berlubang sudah selesai
     public void OnScanGigiSelesai()
     {
         if (_audioSource.isPlaying) _audioSource.Stop();
         _audioSource.PlayOneShot(_sfxScanSelesai);
     }
+
+    //Voice over akan aktif tang bisa di drag
     public void OnTahapTang()
     {
         if (_audioSource.isPlaying) _audioSource.Stop();
         _audioSource.PlayOneShot(_sfxTahapTang);
     }
+
+    //Voice over akan aktif ketika game pasang baut mulai
     public void OnPasangBaut()
     {
         if (_audioSource.isPlaying) _audioSource.Stop();
         _audioSource.PlayOneShot(_sfxTahapPasangBaut);
     }
+
+    //Voice over akan aktif ketika game pasang gigi mulai
     public void OnPasangGigi()
     {
         if (_audioSource.isPlaying) _audioSource.Stop();
         _audioSource.PlayOneShot(_sfxTahapPasangGigi);
     }
+
+    //Voice over akan aktif ketika game cabut gigi sudah selesai
     public void OnCabutGigiOutro()
     {
         if (_audioSource.isPlaying) _audioSource.Stop();

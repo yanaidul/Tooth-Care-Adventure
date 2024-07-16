@@ -24,6 +24,7 @@ public class Nampan : MonoBehaviour
         _isiNampan = 0;
     }
 
+    //Function yang dipanggil untuk mendeteksi gigi berlubag yang di drag masuk di area cakupannya atau tidak, bila masuk area maka gigi berlubang akan hilang dan menambahkan jumlah isi nampan
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("GigiBerlubang1"))
@@ -40,6 +41,7 @@ public class Nampan : MonoBehaviour
             }
         }
 
+        //Function yang dipanggil untuk mendeteksi gigi berlubag yang di drag masuk di area cakupannya atau tidak, bila masuk area maka gigi berlubang akan hilang dan menambahkan jumlah isi nampan
         if (collision.CompareTag("GigiBerlubang2"))
         {
             _gigiBerlubang2InNampan.gameObject.SetActive(true);

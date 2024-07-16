@@ -36,6 +36,7 @@ public class MoveOnStart : MonoBehaviour
         });
     }
 
+    //Function yang dipanggil ketika button skip dipanggil
     public void OnClickSkipButton()
     {
         _moveTween.Kill();

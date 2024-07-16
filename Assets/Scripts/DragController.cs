@@ -69,6 +69,7 @@ public class DragController : Singleton<DragController>
         }
     }
 
+    //Function yang dipanggil pada saat drag baru mau dimulai
     private void InitDrag()
     {
         _isDragActive = true;
@@ -76,6 +77,7 @@ public class DragController : Singleton<DragController>
         draggable.OnClickObject();
     }
 
+    //Function yang dipanggil ketika drag game object berlangsung
     private void Drag()
     {
         if (!_lastDragged.TryGetComponent(out BoxCollider2D boxCollider2D)) return;
@@ -83,11 +85,13 @@ public class DragController : Singleton<DragController>
 
     }
 
+    //Function yang dipanggil ketika game object sudah selesai di drag
     private void Drop()
     {
         _isDragActive = false;
     }
 
+    //Function yang di panggil untuk set drag active ke false
     public void SetDragActiveToFalse()
     {
         _isDragActive = false;

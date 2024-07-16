@@ -17,6 +17,7 @@ public class TangDetector : MonoBehaviour
         _isHoldingATooth = false;
     }
 
+    //Function yang dipanggil untuk mendeteksi gigi berlubag yang di drag masuk di area cakupannya atau tidak, bila masuk area maka gigi berlubang akan di drag ketika tang digunakan
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (_isHoldingATooth) return;
@@ -35,11 +36,13 @@ public class TangDetector : MonoBehaviour
         }
     }
 
+    //Function yang dipanggil untuk membuat status pada saat menggunakan tang bawa gigi atau ngga
     public void SetIsHoldingAToothValue(bool newValue)
     {
         _isHoldingATooth = newValue;
     }
 
+    //Function yang dipanggil ketika tang sudah selesai ngedrag semua gigi yang berlubang ke nampan
     public void OnTangFinish()
     {
         if (!transform.parent.TryGetComponent(out Draggable draggable)) return;

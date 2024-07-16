@@ -20,6 +20,7 @@ public class PasangBaut : Singleton<PasangBaut>
         _jumlahBautTerpasang = 0;
     }
 
+    //Function yang dipanggil untuk meningkatkat jumlah baut yang terpasang, yang dimana kalau jumlah baut terpasang sudah 2, maka akan lanjut ke tahap selanjutnya
     public void OnIncreaseJumlahBautTerpasang()
     {
         _jumlahBautTerpasang++;

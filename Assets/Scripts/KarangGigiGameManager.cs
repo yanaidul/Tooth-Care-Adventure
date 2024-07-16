@@ -31,12 +31,14 @@ public class KarangGigiGameManager : Singleton<KarangGigiGameManager>
         }
     }
 
+    //Function yang dipanggil untuk menampilkan game panel secara delay
     IEnumerator OnTriggerDelayIntro(float audioClipDuration)
     {
         yield return new WaitForSeconds(audioClipDuration);
         _gamePanel.SetActive(true);
     }
 
+    //Function yang dipanggil untuk menghilangkan game panel secara delay
     IEnumerator OnTriggerDelayOutro(float audioClipDuration)
     {
         yield return new WaitForSeconds(audioClipDuration);

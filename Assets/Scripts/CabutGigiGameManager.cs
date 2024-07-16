@@ -19,12 +19,14 @@ public class CabutGigiGameManager : Singleton<CabutGigiGameManager>
         OnActiveStepPanel(_currentTahap);
     }
 
+    //Function yang dipnaggil untuk lanjut ke tahap selanjutnya (misal dari scan gigi lalu ke cabut gigi berlubang)
     public void OnNextTahap()
     {
         _currentTahap++;
         OnActiveStepPanel(_currentTahap);
     }
 
+    //Function yang dipnaggil untuk mengaktifkan tahap tertentu
     private void OnActiveStepPanel(int currentTahap)
     {
         Debug.Log("Next Tahap dengan current tahap= " + currentTahap);
@@ -51,6 +53,7 @@ public class CabutGigiGameManager : Singleton<CabutGigiGameManager>
 
     }
 
+    //Function yang di panggil untuk memutar audio outro
     IEnumerator OnTriggerDelayOutro(float audioClipDuration)
     {
         yield return new WaitForSeconds(audioClipDuration);

@@ -20,6 +20,7 @@ public class PasangGigi : Singleton<PasangGigi>
         _jumlahGigiTerpasang = 0;
     }
 
+    //Function yang dipanggil untuk meningkatkat jumlah gigi yang terpasang, yang dimana kalau jumlah gigi terpasang sudah 2, maka akan lanjut ke tahap selanjutnya
     public void OnIncreaseJumlahGigiTerpasang()
     {
         _jumlahGigiTerpasang++;
