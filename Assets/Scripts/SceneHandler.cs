@@ -38,4 +38,14 @@ public class SceneHandler : MonoBehaviour
         if (!BGM.GetInstance().bgm.isPlaying) BGM.GetInstance().bgm.Play();
         SceneManager.LoadScene(3);
     }
+
+    public void OnPauseGame()
+    {
+        Time.timeScale = 0;
+    }
+
+    public void OnResumeGame()
+    {
+        Time.timeScale = 1;
+    }
 }
